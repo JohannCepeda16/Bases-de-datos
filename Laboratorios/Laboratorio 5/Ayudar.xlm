@@ -1,0 +1,37 @@
+<!--Corregir TRazon -->
+<Bien>
+	<Asignacion numero="1" fecha="11/11/2020" aceptado="0">
+		<Bien codigo="1" nombre="Ropa" tipo="Vestuario" medida="30" unitario="1000" retirado="0">
+			<Familia numero="1">
+				<Persona codigo="1" genero="M" talla="M" nacimiento="07/05/1997">		
+					<Opinion numero="1" fecha="12/11/2020" opinion="B" >
+						<Justificacion>Texto de la justificacion</Justificacion>
+						<Opinion_Grupal>
+							<TRazon>
+								<razon>Texto de la razon</razon>
+								<estrellas />
+							</TRazon>
+						</Opinion_Grupal>
+					</Opinion>
+				</Persona>
+			</Familia>
+		</Bien>
+	</Asignacion>
+	
+	<Asignacion numero="2" fecha="11/11/2020" aceptado="1">
+		<Bien codigo="2" nombre="Alimentos" tipo="Perecedero" medida="25" unitario="2500" retirado="0">
+			<Familia numero="2">
+				<Persona codigo="2" genero="F" talla="S" nacimiento="11/10/1998">		
+					<Opinion numero="1" fecha="12/11/2020" opinion="M" >
+						<Justificacion>Texto de la justificacion</Justificacion>
+						<Opinion_Grupal>
+							<razon>Texto de la razon</razon>
+							<estrellas />
+						</Opinion_Grupal>
+					</Opinion>
+				</Persona>
+			</Familia>
+		</Bien>
+	</Asignacion>
+	
+</Ayudar>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Ayudar[
+
+	<!ELEMENT Ayudar (Asignacion)>
+	<!ELEMENT Asignacion (Bien)>
+	<!ATTLIST Asignacion 
+	  aceptado CDATA #REQUIRED
+	  fecha CDATA #REQUIRED
+	  numero CDATA #REQUIRED>
+
+	<!ELEMENT Bien (Familia)>
+	<!ATTLIST Bien
+	  codigo CDATA #REQUIRED
+	  medida CDATA #REQUIRED
+	  nombre NMTOKEN #REQUIRED
+	  retirado CDATA #REQUIRED
+	  tipo NMTOKEN #REQUIRED
+	  unitario CDATA #REQUIRED>
+
+	<!ELEMENT Familia (Persona)>
+	<!ATTLIST Familia
+	  numero CDATA #REQUIRED>
+
+	<!ELEMENT Persona (Opinion)>
+	<!ATTLIST Persona
+	  codigo CDATA #REQUIRED
+	  genero NMTOKEN #REQUIRED
+	  nacimiento CDATA #REQUIRED
+	  talla CDATA #REQUIRED>
+
+	<!ELEMENT Opinion (Justificacion,Opinion_Grupal)>
+	<!ATTLIST Opinion
+	  fecha CDATA #REQUIRED
+	  numero CDATA #REQUIRED
+	  opinion NMTOKEN #REQUIRED>
+
+	<!ELEMENT Justificacion (#PCDATA)>
+	<!ELEMENT Opinion_Grupal (razon,estrellas)>
+	<!ELEMENT razon (#PCDATA)>
+	<!ELEMENT estrellas EMPTY>
+
+]>
